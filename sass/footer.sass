@@ -1,0 +1,73 @@
+@import 'responsive'
+
+.main-footer
+	background-color: #004757
+	position: sticky
+	bottom: 0
+	z-index: 4
+	+media(lgxs)
+		position: static
+
+	&__hidden
+		z-index: 2
+
+	&__page
+		position: relative
+
+	&__content
+		display: flex
+		align-items: center
+		padding: 0 60px
+		padding-top: 25px
+		padding-bottom: 20px
+		+media(lg)
+			padding: 20px 40px
+		+media(mdx)
+			padding: 20px 30px
+		+media(md)
+			padding: 20px 20px
+		+media(smx)
+			flex-wrap: wrap
+
+	&__logo
+		max-width: 172px
+		width: 100%
+		margin-right: 55px
+		+media(smx)
+			margin-right: 0px
+			margin-bottom: 15px
+		img
+			display: block
+
+	&__desc
+		p
+			font-size: 10px
+			line-height: 1.7
+			text-transform: uppercase
+			color: #ffffff
+			a
+				color: #fff
+				transition: 0.3s color
+				&:hover
+					color: rgba(255, 255, 255, 0.5)
+
+.msg-modal
+	position: fixed
+	top: 30%
+	left: calc(50% - 150px)
+	width: 300px
+	padding: 20px 30px
+	border-radius: 15px
+	text-align: center
+	background-color: #004757
+	color: #fff
+	opacity: 0
+	visibility: hidden
+	font-size: 18px
+	line-height: 1.5
+	border-radius: 5px
+	z-index: 20
+	transition: 0.3s visibility, 0.3s opacity
+	&-active
+		opacity: 1
+		visibility: visible

@@ -1,0 +1,89 @@
+@import 'responsive'
+
+.practic
+	background-color: #fff
+	&__content
+		position: relative
+
+	&__wrap
+		max-width: 62%
+		padding: 98px 60px
+		padding-bottom: 50px
+		+media(lb)
+			padding: 85px 40px
+		+media(lg)
+			max-width: initial
+			padding: 65px 45px
+			width: calc(100% - 250px)
+		+media(mdx)
+			width: 100%
+			padding: 55px 30px
+			padding-bottom: 40px
+		+media(md)
+			padding: 40px 20px
+			padding-top: 45px
+
+	&__text
+		padding-top: 5px
+		padding-bottom: 44px
+		p
+			font-size: 16px
+			line-height: 2.2
+			color: #333333
+			+media(md)
+				line-height: 1.7
+
+	&__form
+		display: flex
+		border-radius: 5px
+		background-color: #dcdcdc
+		margin-bottom: 55px
+
+	&__input
+		display: block
+		width: 100%
+		color: #808080
+		border: none
+		outline: none
+		background-color: transparent
+		padding: 15px 20px
+		padding-bottom: 16px
+		&::placeholder
+			color: #808080
+
+	&__btn
+		cursor: pointer
+		display: block
+		width: 46px
+		height: 50px
+		border: none
+		outline: none
+		background-color: inherit
+		padding: 0px
+		svg
+			display: block
+			width: 20px
+			height: 20px
+			margin: 0 auto
+
+	&__holder
+		display: flex
+		flex-wrap: wrap
+
+	&__box
+		cursor: pointer
+		user-select: none
+		display: inline-block
+		font-size: 16px
+		color: #014957
+		border: 2px solid #3f7e8a
+		border-radius: 5px
+		background-color: #eeeeee
+		padding: 10px 20px
+		margin-bottom: 28px
+		transition: 0.3s background-color, 0.3s color
+		&:hover
+			background-color: #fff
+			color: #000
+		&:not(:last-child)
+			margin-right: 27px

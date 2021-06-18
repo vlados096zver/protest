@@ -1,0 +1,107 @@
+@import 'responsive'
+
+.news
+	background-color: #fff
+	&--blog
+		background-color: #f2f2f2
+
+	&__content
+		position: relative
+
+	&__wrap
+		position: relative
+		z-index: 2
+		max-width: 76%
+		padding: 95px 60px
+		padding-bottom: 65px
+		+media(desc)
+			max-width: 100%
+		+media(lg)
+			padding: 65px 40px
+			padding-bottom: 50px
+		+media(mdx)
+			padding: 55px 30px
+		+media(md)
+			max-width: 100%
+			padding: 50px 20px
+		&--inner
+			padding-bottom: 100px
+			+media(lg)
+				padding-bottom: 70px
+
+	&__holder
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -20px
+		padding-bottom: 20px
+		+media(lgs)
+			margin: 0 -15px
+		+media(mdx)
+			margin: 0px
+			padding-bottom: 15px
+
+	&__item
+		width: calc(100% / 3 - 40px)
+		background-color: #fff
+		box-shadow: 0 20px 60px rgba(131, 131, 131, 0.2)
+		padding: 25px 30px
+		padding-bottom: 35px
+		margin: 0 20px
+		margin-bottom: 45px
+		+media(lgs)
+			width: calc(100% / 3 - 30px)
+			padding: 25px 20px
+			padding-bottom: 30px
+			margin: 0 15px
+			margin-bottom: 35px
+		+media(mdx)
+			width: 100%
+			max-width: 500px
+			margin: 0px auto
+			margin-bottom: 35px
+		&:hover
+			.details__info	
+				color: #000405
+			.details__block
+				fill: #000405
+
+	&__title
+		font-size: 18px
+		line-height: 2
+		color: #333333
+		padding-bottom: 20px
+		+media(md)
+			line-height: 1.7
+
+	&__data
+		font-size: 16px
+		line-height: 1.2
+		color: #808080
+		text-transform: uppercase
+		padding-bottom: 30px
+
+	&__block
+		max-width: 62%
+		padding: 90px 60px
+		padding-bottom: 0px
+		+media(lg)
+			max-width: initial
+			width: calc(100% - 250px)
+			padding: 0 40px
+			padding-top: 50px
+		+media(mdx)
+			width: 100%
+			padding: 0 30px
+			padding-top: 50px
+		+media(md)
+			padding: 0 20px
+			padding-top: 70px
+		&+.news__wrap
+			padding-top: 0px
+
+	&__elem
+		p
+			font-size: 16px
+			line-height: 2.25
+			color: #333333
+			padding-bottom: 2.5em

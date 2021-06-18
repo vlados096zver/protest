@@ -1,0 +1,62 @@
+@import 'responsive'
+
+.info
+	background-image: url(img/bg-info.jpg)
+	background-size: cover
+	background-position: top center
+
+	&__wrap
+		position: relative
+		max-width: 1150px
+		margin: 0 auto
+		padding: 0 60px 60px
+		+media(lg)
+			padding: 0px 40px 40px
+		+media(mdx)
+			padding: 0 30px 40px
+		+media(md)
+			padding: 0 20px 40px
+
+	&__logo
+		max-width: 100%
+		padding-top: 180px
+		margin-bottom: 40px
+		+media(lg)
+			padding-top: 80px
+		+media(sm)
+			padding-top: 50px
+		img
+			display: block
+			max-width: 100%
+			margin: 0 auto
+			
+
+	&__text
+		font-size: 88px
+		text-align: center
+		color: #004757
+		text-transform: uppercase
+		text-align: center
+		padding-bottom: 25px
+		font-family: RopaMixPro
+		font-weight: normal
+		+media(lg)
+			font-size: 80px
+		+media(lgm)
+			font-size: 70px
+		+media(md)
+			font-size: 40px
+
+	&__desc
+		font-size: 60px
+		color: #f7e400
+		text-shadow: 4px 3px 0 #004757
+		text-transform: uppercase
+		text-align: center
+		padding-bottom: 65px
+		font-weight: 900
+		+media(lgm)
+			font-size: 40px
+			padding-bottom: 40px
+		+media(md)
+			font-size: 32px

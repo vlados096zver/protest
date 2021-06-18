@@ -1,0 +1,155 @@
+@import 'responsive'
+
+.team
+	background-color: #f2f2f2
+
+	&__content
+		position: relative
+
+	&__wrap
+		position: relative
+		z-index: 2
+		max-width: 76%
+		padding: 78px 60px
+		padding-bottom: 62px
+		+media(desc)
+			max-width: 100%
+		+media(lg)
+			padding: 65px 40px
+			padding-bottom: 52px
+		+media(mdx)
+			padding: 55px 30px
+		+media(md)
+			max-width: 100%
+			padding: 50px 20px
+
+
+	&__slider
+		position: relative
+		z-index: 3
+		.slick-list
+			margin: 0 -20px
+			+media(lgsm)
+				margin: 0px
+
+	&__item
+		display: flex
+		flex-wrap: wrap
+		outline: none
+		box-shadow: 0 10px 20px rgba(131, 131, 131, 0.2)
+		background-color: #ffffff
+		padding: 35px 40px
+		+media(lb)
+			padding: 35px 20px
+		+media(mdx)
+			box-shadow: none
+		&.slick-slide
+			display: flex
+			margin: 0 20px
+			+media(lgsm)
+				margin: 0px
+	&__image
+		width: 35%
+		+media(smx)
+			order: -1
+			width: 100%
+			margin-bottom: 15px
+
+	&__box
+		width: 65%
+		// max-width: 290px
+		padding-right: 20px
+		+media(lgsm)
+			max-width: 100%
+		+media(smx)
+			width: 100%
+
+	&__image
+		display: block
+
+	&__fio
+		font-size: 24px
+		line-height: 1.2
+		color: #333333
+		padding-top: 13px
+		padding-bottom: 22px
+		font-weight: 900
+
+	&__position
+		font-size: 16px
+		color: #014957
+		padding-bottom: 32px
+
+	&__text
+		padding-bottom: 18px
+		p
+			font-size: 16px
+			color: #000
+			line-height: 1.9
+			+media(md)
+				line-height: 1.7
+
+	&__dots-list 
+		max-width: 360px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+		position: relative
+		margin-top: 84px
+		+media(md)
+			margin-top: 55px
+		+media(sm)
+			max-width: 280px
+		&:after
+			position: absolute
+			content: ' '
+			top: calc(50% - 1px)
+			left: 0px
+			width: 100%
+			height: 2px
+			background-color: #808080
+		&:before
+			content: ''
+			position: absolute
+			z-index: 3
+			top: -5px
+			left: 0px
+			width: 40px
+			height: 40px
+			margin-left: -6px
+			background-color: #014957
+			border: 10px solid #e2e2e2
+			box-shadow: 0 0 0 1px #014957
+			border-radius: 50%
+			transition: 0.5s left ease-in-out
+
+		li:not(:last-child)
+			margin-right: 70px
+			+media(sm)
+				margin-right: 35px
+		li
+			position: relative
+			z-index: 2
+			cursor: pointer
+			width: 30px
+			height: 30px
+			font-size: 0px
+			border: 1px solid #808080
+			background-color: #e2e2e2
+			border-radius: 50%
+			&:after
+				position: absolute
+				content: ' '
+				top: calc(50% - 8px)
+				left: calc(50% - 8px)
+				width: 16px
+				height: 16px
+				border-radius: 50%
+				background-color: #808080
+			button
+				display: none
+
+
+
+

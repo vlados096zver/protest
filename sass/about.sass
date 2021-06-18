@@ -1,0 +1,54 @@
+@import 'responsive'
+
+.about
+	background-color: #f2f2f2
+	&__content
+		position: relative
+
+	&__wrap
+		max-width: 62%
+		padding: 85px 60px
+		padding-bottom: 55px
+		+media(lb)
+			padding: 85px 40px
+			padding-top: 55px
+			padding-bottom: 55px
+		+media(lg)
+			max-width: initial
+			width: calc(100% - 250px)
+		+media(mdx)
+			width: 100%
+			padding: 55px 30px
+			padding-bottom: 40px
+		+media(md)
+			padding: 40px 20px
+			padding-top: 45px
+
+	&__text
+		p
+			font-size: 16px
+			line-height: 2
+			color: #333333
+			padding-bottom: 1em
+			+media(lg)
+				line-height: 1.7
+
+		ul
+			margin: 0
+
+			li
+				list-style-type: disc
+				list-style-position: inside
+				line-height: 2
+				margin-bottom: 7px
+
+		ol
+			margin: 0
+			padding: 0
+
+			li
+				list-style-type: decimal
+				list-style-position: inside
+				line-height: 2
+				margin-bottom: 7px
+

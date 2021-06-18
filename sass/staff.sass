@@ -1,0 +1,73 @@
+@import 'responsive'
+
+.staff
+	background-color: #f2f2f2
+	&__content
+		position: relative
+		
+	&__wrap
+		max-width: 62%
+		padding: 80px 60px
+		+media(lb)
+			padding: 70px 40px
+		+media(lg)
+			max-width: initial
+			width: calc(100% - 250px)
+		+media(mdx)
+			width: 100%
+			padding: 55px 30px
+		+media(md)
+			padding: 55px 20px
+
+	&__block
+		display: flex
+		flex-wrap: wrap
+		margin-top: 5px
+
+	&__image
+		width: 400px
+		display: flex
+		justify-content: center
+		margin-bottom: 55px
+		+media(big)
+			width: 300px
+		+media(lgm)
+			max-width: 200px
+			width: 100%
+			margin-bottom: 35px
+		+media(md)
+			margin: 0 auto
+			margin-bottom: 35px
+		img
+			display: block
+			margin: 0 auto
+
+	&__desc
+		width: calc(100% - 400px)
+		padding-left: 45px
+		margin-bottom: 55px
+		+media(big)
+			width: calc(100% - 300px)
+			padding-left: 35px
+		+media(lgm)
+			width: 100%	
+			padding-left: 0px
+			margin-bottom: 50px
+		+media(md)
+			margin-bottom: 35px
+		p
+			font-size: 16px
+			line-height: 2.25
+			color: #004757
+			font-weight: bold
+			+media(md)
+				line-height: 1.7
+
+	&__text
+		p
+			font-size: 16px
+			line-height: 2.25
+			color: #333333
+			padding-bottom: 2.5em
+			+media(md)
+				line-height: 1.7

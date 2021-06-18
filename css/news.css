@@ -1,0 +1,169 @@
+.news {
+	background-color: #fff;
+}
+
+.news--blog {
+	background-color: #f2f2f2;
+}
+
+.news__content {
+	position: relative;
+}
+
+.news__wrap {
+	position: relative;
+	z-index: 2;
+	max-width: 76%;
+	padding: 95px 60px;
+	padding-bottom: 65px;
+}
+
+.news__wrap--inner {
+	padding-bottom: 100px;
+}
+
+.news__holder {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -20px;
+	padding-bottom: 20px;
+}
+
+.news__item {
+	width: calc(100% / 3 - 40px);
+	background-color: #fff;
+	box-shadow: 0 20px 60px rgba(131, 131, 131, 0.2);
+	padding: 25px 30px;
+	padding-bottom: 35px;
+	margin: 0 20px;
+	margin-bottom: 45px;
+}
+
+.news__item:hover .details__info {
+	color: #000405;
+}
+
+.news__item:hover .details__block {
+	fill: #000405;
+}
+
+.news__title {
+	font-size: 18px;
+	line-height: 2;
+	color: #333333;
+	padding-bottom: 20px;
+}
+
+.news__data {
+	font-size: 16px;
+	line-height: 1.2;
+	color: #808080;
+	text-transform: uppercase;
+	padding-bottom: 30px;
+}
+
+.news__block {
+	max-width: 62%;
+	padding: 90px 60px;
+	padding-bottom: 0px;
+}
+
+.news__block + .news__wrap {
+	padding-top: 0px;
+}
+
+.news__elem p {
+	font-size: 16px;
+	line-height: 2.25;
+	color: #333333;
+	padding-bottom: 2.5em;
+}
+
+@media screen and (max-width: 1600px) {
+
+.news__wrap {
+	max-width: 100%;
+}
+
+}
+
+@media screen and (max-width: 1430px) {
+
+.news__wrap {
+	padding: 65px 40px;
+	padding-bottom: 50px;
+}
+
+.news__wrap--inner {
+	padding-bottom: 70px;
+}
+
+.news__block {
+	max-width: initial;
+	width: calc(100% - 250px);
+	padding: 0 40px;
+	padding-top: 50px;
+}
+
+}
+
+@media screen and (max-width: 1250px) {
+
+.news__holder {
+	margin: 0 -15px;
+}
+
+.news__item {
+	width: calc(100% / 3 - 30px);
+	padding: 25px 20px;
+	padding-bottom: 30px;
+	margin: 0 15px;
+	margin-bottom: 35px;
+}
+
+}
+
+@media screen and (max-width: 1050px) {
+
+.news__wrap {
+	padding: 55px 30px;
+}
+
+.news__holder {
+	margin: 0px;
+	padding-bottom: 15px;
+}
+
+.news__item {
+	width: 100%;
+	max-width: 500px;
+	margin: 0px auto;
+	margin-bottom: 35px;
+}
+
+.news__block {
+	width: 100%;
+	padding: 0 30px;
+	padding-top: 50px;
+}
+
+}
+
+@media screen and (max-width: 960px) {
+
+.news__wrap {
+	max-width: 100%;
+	padding: 50px 20px;
+}
+
+.news__title {
+	line-height: 1.7;
+}
+
+.news__block {
+	padding: 0 20px;
+	padding-top: 70px;
+}
+
+}
+
