@@ -83,6 +83,11 @@
 	padding-top: 76px;
 	padding-left: 20px;
 	padding-right: 20px;
+	padding-bottom: 9px;
+}
+
+.block__item {
+	margin-bottom: 21px;
 }
 
 }
