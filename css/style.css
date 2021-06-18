@@ -1661,8 +1661,12 @@ img {
 	transition: 0.3s transform, 0.3s background-color;
 }
 
-.block__item--inner .block__col--active:before {
+.block__item--inner .block__col:before {
 	transform: rotate(90deg);
+}
+
+.block__item--inner .block__col--active:before {
+	transform: none;
 }
 
 .block__elem {
