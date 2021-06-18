@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-$('.block__col').on('click', function(){
+$('.block__item--inner .block__col').on('click', function(){
     $(this).next().slideToggle(300);
      $(this).toggleClass('block__col--active');
 })
