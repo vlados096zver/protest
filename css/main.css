@@ -34,6 +34,10 @@ img {
 	padding: 0px;
 }
 
+.container--block {
+	max-width: 1175px;
+}
+
 .title {
 	font-size: 60px;
 	line-height: 1;

@@ -1326,6 +1326,10 @@ img {
 	padding: 0px;
 }
 
+.container--block {
+	max-width: 1175px;
+}
+
 .title {
 	font-size: 60px;
 	line-height: 1;
@@ -1600,7 +1604,6 @@ img {
 }
 
 .block {
-	max-width: 965px;
 	padding-top: 55px;
 	padding-left: 50px;
 	padding-right: 60px;
